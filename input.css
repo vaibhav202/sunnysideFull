@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    user-select: none;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    text-rendering: optimizeLegibility;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    'nav'
+    'head'
+    'main'
+    'foot';
+}
+
+nav{
+    order: 1;
+    grid-template: nav;
+}
+
+.menuToggler .bar1{
+    translate: 0 5px;
+}
+
+.menuToggler .bar2{
+    translate: 0 -5px;
+}
+
+.menuInactive .bar1, .menuInactive .bar2{
+    transition: rotate .25s ease, translate .25s .25s ease;
+}
+
+.menuActive .bar1, .menuActive .bar2{
+    transition: translate .25s ease, rotate .25s .25s ease;
+}
+
+.menu{
+    width: calc(100% - 3rem);
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.125));
+}
+
+.menuInactive ~ .menu{
+    @apply md:scale-100 md:opacity-100 scale-0 opacity-0 origin-top-right;
+    transition: transform .25s ease, opacity .5s ease;
+}
+
+.menuActive ~ .menu{
+    @apply scale-100 opacity-100 origin-top-right;
+    transition: transform .25s ease, opacity .5s ease;
+}
+
+header{
+    order: 2;
+    grid-template: head;
+}
+
+main{
+    order: 3;
+    grid-template: main;
+}
+
+h1, h2, h3, h4, h5, h6{
+    @apply leading-snug;
+}
+
+p{
+    @apply leading-relaxed;
+}
+
+footer{
+    order: 4;
+    grid-template: foot;
+}
+
+footer ul:nth-of-type(2){
+    @apply mt-10;
+}

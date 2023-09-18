@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+</head>
+<body class="relative">
+
+  <nav class="md:flex md:flex-nowrap md:justify-between md:px-12 md:py-10 fixed top-0 px-6 py-8 w-full grid items-center transition-all duration-300 ease-in-out z-50">
+    <div class="md:min-w-[186px] row-start-1 col-span-1 w-[124px] h-auto flex items-start z-50">
+      <svg viewBox="0 0 124 24" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" class="fill-white"><path d="M5.857 18.708c1.638 0 2.995-.36 4.07-1.08 1.075-.721 1.613-1.769 1.613-3.144-.083-1.855-1.464-3.246-4.144-4.173l-1.44-.597c-.314-.1-.538-.198-.67-.298a.45.45 0 01-.198-.373c0-.414.273-.62.819-.62.678 0 1.182.347 1.513 1.043l3.698-1.044c-.893-2.22-2.614-3.329-5.162-3.329-1.522 0-2.788.398-3.797 1.193C1.15 7.08.645 8.116.645 9.39c0 .398.058.766.174 1.106.116.34.29.638.521.894.232.257.455.48.67.671.215.19.488.369.82.534.33.166.582.286.756.36.174.075.41.162.707.261l.422.15 1.49.546c.363.133.6.244.707.335a.449.449 0 01.16.36c0 .431-.404.647-1.215.647-1.191 0-1.903-.53-2.134-1.59L0 14.509c.463 2.8 2.416 4.2 5.857 4.2zm11.636 0c1.638 0 2.845-.63 3.623-1.888v1.615h5.112V5.366h-5.112v7.156c0 1.474-.505 2.21-1.514 2.21-1.026 0-1.539-.736-1.539-2.21V5.366h-5.112v7.653c0 3.793 1.514 5.69 4.542 5.69zm16.103-.273V11.28c0-1.475.504-2.212 1.513-2.212 1.026 0 1.54.737 1.54 2.212v7.155h5.111v-7.652c0-3.793-1.513-5.69-4.541-5.69-1.638 0-2.846.63-3.623 1.888V5.366h-5.113v13.069h5.113zm15.383 0V11.28c0-1.475.504-2.212 1.514-2.212 1.025 0 1.538.737 1.538 2.212v7.155h5.113v-7.652c0-3.793-1.514-5.69-4.542-5.69-1.638 0-2.846.63-3.623 1.888V5.366h-5.113v13.069h5.113zM64.958 24l8.289-18.634H67.91l-2.532 6.684-2.258-6.684h-5.584l5.435 11.802L59.944 24h5.014zm13.67-5.292c1.638 0 2.995-.36 4.07-1.08 1.076-.721 1.614-1.769 1.614-3.144-.083-1.855-1.465-3.246-4.145-4.173l-1.44-.597c-.314-.1-.537-.198-.67-.298a.45.45 0 01-.198-.373c0-.414.273-.62.819-.62.678 0 1.183.347 1.514 1.043l3.698-1.044c-.894-2.22-2.614-3.329-5.162-3.329-1.522 0-2.788.398-3.797 1.193-1.01.795-1.514 1.83-1.514 3.105 0 .398.058.766.173 1.106.116.34.29.638.522.894.231.257.455.48.67.671.215.19.488.369.819.534.33.166.583.286.757.36.173.075.41.162.707.261l.422.15 1.489.546c.364.133.6.244.707.335a.449.449 0 01.161.36c0 .431-.405.647-1.216.647-1.19 0-1.902-.53-2.134-1.59l-3.723.844c.464 2.8 2.416 4.2 5.857 4.2zm9.8-14.137c.91 0 1.613-.215 2.11-.646.495-.43.744-.977.744-1.64 0-.678-.24-1.23-.72-1.651C90.082.21 89.371 0 88.428 0c-.943 0-1.655.211-2.135.634-.48.422-.72.973-.72 1.652 0 .662.249 1.209.745 1.64.497.43 1.2.645 2.11.645zm2.556 13.864V5.366H85.87v13.069h5.113zm7.74.273c1.737 0 2.977-.63 3.722-1.888v1.615h5.112V.472h-5.112v6.534c-.745-1.275-1.985-1.913-3.723-1.913-1.753 0-3.214.642-4.38 1.926-1.166 1.283-1.75 2.91-1.75 4.882 0 1.97.584 3.598 1.75 4.882 1.166 1.283 2.627 1.925 4.38 1.925zm1.39-3.9c-.729 0-1.312-.274-1.75-.82-.439-.547-.658-1.243-.658-2.087 0-.845.215-1.54.645-2.087.447-.547 1.034-.82 1.762-.82s1.311.273 1.75.82c.438.546.657 1.242.657 2.087 0 .844-.219 1.54-.657 2.087-.439.546-1.022.82-1.75.82zm16.698 3.9c2.597 0 4.624-.754 6.08-2.26l-2.11-2.833c-1.042.845-2.217 1.267-3.524 1.267-.992 0-1.799-.224-2.42-.67-.62-.448-.93-.879-.93-1.293h9.604c.083-.298.124-.687.124-1.167 0-2.054-.674-3.677-2.022-4.87-1.349-1.193-3.073-1.789-5.175-1.789-2.25 0-4.028.671-5.335 2.013-1.307 1.341-1.961 2.956-1.961 4.844 0 1.938.69 3.549 2.072 4.833 1.382 1.283 3.247 1.925 5.597 1.925zm2.208-8.149h-5.112c.033-.613.298-1.08.794-1.404.496-.323 1.084-.484 1.762-.484.678 0 1.266.165 1.762.497.497.331.761.795.794 1.391z"/></svg>
+    </div>
+
+    <div class="menuToggler menuInactive row-start-1 col-span-2 md:hidden relative w-full h-full flex flex-col justify-center items-end">
+      <span class="absolute bg-white bar1 w-8 h-[2px]"></span>
+      <span class="absolute bg-white bar2 w-8 h-[2px]"></span>
+    </div>
+
+    <div class="md:static md:translate-x-0 md:w-auto md:items-end menu absolute top-full right-1/2 translate-x-1/2 row-start-2 col-span-3 h-full menu flex flex-col justify-start items-start">
+      <span class="md:hidden block self-end w-0 h-0 border-l-[28px] border-l-white/0 border-b-[28px] border-b-white"></span>
+      <ul class="md:p-0 md:flex-row md:w-auto md:bg-white/0 bg-white p-10 w-full flex flex-col self-center justify-center items-center gap-[34px]">
+        <li class="md:text-white md:text-xl after:-translate-y-1.5 hover:after:bg-dark-blue hover:after:scale-x-100 after:bottom after:w-full after:h-1.5 after:rounded-full after:scale-x-0 after:transition-all after:ease-in-out after:duration-300 after:-z-10 text-very-dark-grayish-blue text-lg font-['Barlow'] flex flex-col items-center"><a aria-label="About us" href="#about">About</a></li>
+        <li class="md:text-white md:text-xl after:-translate-y-1.5 hover:after:bg-dark-blue hover:after:scale-x-100 after:bottom after:w-full after:h-1.5 after:rounded-full after:scale-x-0 after:transition-all after:ease-in-out after:duration-300 after:-z-10 text-very-dark-grayish-blue text-lg font-['Barlow'] flex flex-col items-center"><a aria-label="Services" href="#services">Services</a></li>
+        <li class="md:text-white md:text-xl after:-translate-y-1.5 hover:after:bg-dark-blue hover:after:scale-x-100 after:bottom after:w-full after:h-1.5 after:rounded-full after:scale-x-0 after:transition-all after:ease-in-out after:duration-300 after:-z-10 text-very-dark-grayish-blue text-lg font-['Barlow'] flex flex-col items-center"><a aria-label="Projects" href="#projects">Projects</a></li>
+        <li class="md:bg-white relative after:absolute after:left-1/2 after:-translate-x-1/2 after:w-full after:h-full after:rounded-full after:opacity-0 after:transition-all after:ease-in-out after:duration-300 active:text-very-dark-saturated-blue after:scale-x-0 bg-yellow hover:after:bg-hover-clr hover:after:scale-x-100 hover:after:opacity-100 rounded-full text-lg font-['Fraunces'] uppercase flex items-center overflow-hidden"><a class="block px-8 py-4 w-full h-full z-10" href="#contact" aria-label="Contact us">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="relative w-full h-full text-center flex flex-col justify-start items-center"> <!-- bg-[url('./images/mobile/image-header.jpg')] md:bg-[url('./images/desktop/image-header.jpg')] bg-[length:1600px_auto] bg-[top_center] bg-no-repeat -->
+    <div class="absolute top-[23.5%] flex flex-col gap-[6rem] justify-start items-center">
+      <h1 class="text-[4.8vmax] md:text-[3.8vmax] tracking-[.6rem] font-['Fraunces'] uppercase text-white font-black">We are creatives</h1>
+      <a href="#1"><img class="block h-auto w-[40px] animate-[bounce_2s_linear_infinite]" alt="Scroll up" src="./images/icon-arrow-down.svg" /></a>
+    </div>
+
+    <picture class="block h-auto w-full -z-40">
+      <source media="(min-width: 1024px)" srcset="./images/desktop/image-header.jpg" />
+      <img class="block w-full h-full" alt="image-header" src="./images/mobile/image-header.jpg" />
+    </picture>
+  </header>
+
+  <main id="1" class="w-full flex flex-col">
+    <div class="lg:grid-cols-2 grid grid-cols-1 relative before:absolute before:-top-0.5 before:w-full before:h-0.5 before:bg-[rgba(0,0,0,0.25)]">
+      <section class="lg:order-1 lg:items-start lg:p-32 lg:text-start order-2 w-full h-full px-8 py-20 flex flex-col gap-8 justify-center items-center text-center">
+        <h2 class="lg:text-5xl font-[Fraunces] font-black text-4xl text-very-dark-saturated-blue">Transform your brand</h2>
+        <p class="font-[Barlow] text-lg text-dark-grayish-blue">We are a full-service creative agency specializing in helping brands grow fast. 
+        Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <button class="relative after:absolute after:-bottom-px after:left-0 after:bg-yellow/30 after:w-full after:h-2.5 after:rounded-full after:-z-10 px-1.5 tracking-wider flex"><a href="#transform" aria-label="Transform your brand" class="font-[Fraunces] font-black uppercase text-very-dark-saturated-blue">Learn more</a></button>
+      </section>
+
+      <picture class="lg:order-2 order-1 block w-full">
+        <source media="(min-width: 1024px)" srcset="./images/desktop/image-transform.jpg" />
+        <img class="block w-full" alt="image-transform" src="./images/mobile/image-transform.jpg" />
+      </picture>
+    </div>
+
+    <div class="lg:grid-cols-2 grid grid-cols-1">
+      <section class="lg:order-2 lg:items-start lg:p-32 lg:text-start order-2 w-full h-full px-8 py-20 flex flex-col gap-8 justify-center items-center text-center">
+        <h2 class="lg:text-5xl font-[Fraunces] font-black text-4xl text-very-dark-saturated-blue">Stand out to the right audience</h2>
+        <p class="font-[Barlow] text-lg text-dark-grayish-blue">Using a collaborative formula of designers, researchers, photographers,
+        videographers, and copywriters, we'll build and extend your brand in digital places.</p>
+        <button class="relative after:absolute after:-bottom-px after:left-0 after:bg-soft-red/30 after:w-full after:h-2.5 after:rounded-full after:-z-10 px-1.5 tracking-wider flex"><a href="#stand-out" aria-label="Stand out to the right audience" class="font-[Fraunces] font-black uppercase text-very-dark-saturated-blue">Learn more</a></button>
+      </section>
+
+      <picture class="lg:order-1 order-1 block w-full">
+        <source media="(min-width: 1024px)" srcset="./images/desktop/image-stand-out.jpg" />
+        <img class="block w-full" alt="image-transform" src="./images/mobile/image-stand-out.jpg" />
+      </picture>
+    </div>
+  
+    <div class="md:grid-cols-2 grid grid-cols-1">
+      <div class="relative flex justify-center items-center">
+        <picture class="block w-full">
+          <source media="(min-width: 1024px)" srcset="./images/desktop/image-graphic-design.jpg" />
+          <img class="block w-full" alt="image-transform" src="./images/mobile/image-graphic-design.jpg" />
+        </picture>
+
+        <section class="lg:px-56 lg:py-14 text-dark-saturated-cyan absolute flex gap-10 flex-col self-end px-6 py-14 text-center">
+          <h2 class="font-[Fraunces] font-black text-3xl">Graphic Design</h2>
+          <p class="font-[Barlow]">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.</p>
+        </section>
+      </div>
+    
+      <div class="relative flex justify-center items-center">
+        <picture class="block w-full">
+          <source media="(min-width: 1024px)" srcset="./images/desktop/image-photography.jpg" />
+          <img class="block w-full" alt="image-transform" src="./images/mobile/image-photography.jpg" />
+        </picture>
+
+        <section class="lg:px-56 lg:py-14 text-dark-blue absolute flex gap-10 flex-col self-end px-6 py-14 text-center">
+          <h2 class="font-[Fraunces] font-black text-3xl">Photography</h2>
+          <p class="font-[Barlow]">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="md:py-44 md:w-[80%] w-[92%] py-16 m-auto grid grid-flow-row gap-24 self-center justify-center items-center text-center">
+      <h2 class="md:text-2xl w-full font-[Fraunces] font-black text-base text-grayish-blue tracking-[0.3em] uppercase">Client testimonials</h2>
+
+      <div class="md:gap-12 lg:grid-cols-3 grid grid-cols-1 gap-24">
+        <section class="md:gap-16 flex flex-col-reverse gap-8 justify-center items-center">
+          <h2 class="font-[Fraunces] font-black text-xl text-very-dark-saturated-blue flex flex-col gap-2">
+            Emily R.
+            <span class="font-[Barlow] text-base text-grayish-blue">Marketing Director</span>
+          </h2>
+
+          <p class="font-[Barlow] text-xl text-very-dark-grayish-blue leading-relaxed">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+
+          <picture>
+            <img class="block w-3/5 m-auto rounded-full " alt="Emily" src="./images/image-emily.jpg" />
+          </picture>
+        </section>
+
+        <section class="md:gap-16 flex flex-col-reverse gap-8 justify-center items-center">
+          <h2 class="font-[Fraunces] font-black text-xl text-very-dark-saturated-blue flex flex-col gap-2">
+            Thomas S.
+            <span class="font-[Barlow] text-base text-grayish-blue">Chief Operating Officer</span>
+          </h2>
+
+          <p class="font-[Barlow] text-xl text-very-dark-grayish-blue leading-relaxed">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
+
+          <picture>
+            <img class="block w-3/5 m-auto rounded-full " alt="Emily" src="./images/image-thomas.jpg" />
+          </picture>
+        </section>
+
+        <section class="md:gap-16 flex flex-col-reverse gap-8 justify-center items-center">
+          <h2 class="font-[Fraunces] font-black text-xl text-very-dark-saturated-blue flex flex-col gap-2">
+            Jennie F.
+            <span class="font-[Barlow] text-base text-grayish-blue">Business Owner</span>
+          </h2>
+
+          <p class="font-[Barlow] text-xl text-very-dark-grayish-blue leading-relaxed">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+
+          <picture>
+            <img class="block w-3/5 m-auto rounded-full " alt="Emily" src="./images/image-jennie.jpg" />
+          </picture>
+        </section>
+      </div>  
+    </div>
+
+    <div class="lg:grid-cols-4 grid grid-cols-2">
+      <picture class="block w-full">
+        <source media="(min-width: 1024px)" srcset="./images/desktop/image-gallery-milkbottles.jpg" />
+        <img class="block w-full" alt="image-gallery-milkbottles" src="./images/mobile/image-gallery-milkbottles.jpg" />
+      </picture>
+
+      <picture class="block w-full">
+        <source media="(min-width: 1024px)" srcset="./images/desktop/image-gallery-orange.jpg" />
+        <img class="block w-full" alt="image-gallery-orange" src="./images/mobile/image-gallery-orange.jpg" />
+      </picture>
+
+      <picture class="block w-full">
+        <source media="(min-width: 1024px)" srcset="./images/desktop/image-gallery-cone.jpg" />
+        <img class="block w-full" alt="image-gallery-cone" src="./images/mobile/image-gallery-cone.jpg" />
+      </picture>
+
+      <picture class="block w-full">
+        <source media="(min-width: 1024px)" srcset="./images/desktop/image-gallery-sugarcubes.jpg" />
+        <img class="block w-full" alt="image-gallery-sugar-cubes" src="./images/mobile/image-gallery-sugar-cubes.jpg" />
+      </picture>
+    </div>
+
+    <footer class="bg-ftr-clr text-ftr-txt-clr py-20 flex flex-col gap-12 justify-center items-center">
+      <div class="row-start-1 col-span-1 w-[186px] h-auto flex justify-center items-center">
+        <svg viewBox="0 0 124 24" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" class="fill-ftr-txt-clr"><path d="M5.857 18.708c1.638 0 2.995-.36 4.07-1.08 1.075-.721 1.613-1.769 1.613-3.144-.083-1.855-1.464-3.246-4.144-4.173l-1.44-.597c-.314-.1-.538-.198-.67-.298a.45.45 0 01-.198-.373c0-.414.273-.62.819-.62.678 0 1.182.347 1.513 1.043l3.698-1.044c-.893-2.22-2.614-3.329-5.162-3.329-1.522 0-2.788.398-3.797 1.193C1.15 7.08.645 8.116.645 9.39c0 .398.058.766.174 1.106.116.34.29.638.521.894.232.257.455.48.67.671.215.19.488.369.82.534.33.166.582.286.756.36.174.075.41.162.707.261l.422.15 1.49.546c.363.133.6.244.707.335a.449.449 0 01.16.36c0 .431-.404.647-1.215.647-1.191 0-1.903-.53-2.134-1.59L0 14.509c.463 2.8 2.416 4.2 5.857 4.2zm11.636 0c1.638 0 2.845-.63 3.623-1.888v1.615h5.112V5.366h-5.112v7.156c0 1.474-.505 2.21-1.514 2.21-1.026 0-1.539-.736-1.539-2.21V5.366h-5.112v7.653c0 3.793 1.514 5.69 4.542 5.69zm16.103-.273V11.28c0-1.475.504-2.212 1.513-2.212 1.026 0 1.54.737 1.54 2.212v7.155h5.111v-7.652c0-3.793-1.513-5.69-4.541-5.69-1.638 0-2.846.63-3.623 1.888V5.366h-5.113v13.069h5.113zm15.383 0V11.28c0-1.475.504-2.212 1.514-2.212 1.025 0 1.538.737 1.538 2.212v7.155h5.113v-7.652c0-3.793-1.514-5.69-4.542-5.69-1.638 0-2.846.63-3.623 1.888V5.366h-5.113v13.069h5.113zM64.958 24l8.289-18.634H67.91l-2.532 6.684-2.258-6.684h-5.584l5.435 11.802L59.944 24h5.014zm13.67-5.292c1.638 0 2.995-.36 4.07-1.08 1.076-.721 1.614-1.769 1.614-3.144-.083-1.855-1.465-3.246-4.145-4.173l-1.44-.597c-.314-.1-.537-.198-.67-.298a.45.45 0 01-.198-.373c0-.414.273-.62.819-.62.678 0 1.183.347 1.514 1.043l3.698-1.044c-.894-2.22-2.614-3.329-5.162-3.329-1.522 0-2.788.398-3.797 1.193-1.01.795-1.514 1.83-1.514 3.105 0 .398.058.766.173 1.106.116.34.29.638.522.894.231.257.455.48.67.671.215.19.488.369.819.534.33.166.583.286.757.36.173.075.41.162.707.261l.422.15 1.489.546c.364.133.6.244.707.335a.449.449 0 01.161.36c0 .431-.405.647-1.216.647-1.19 0-1.902-.53-2.134-1.59l-3.723.844c.464 2.8 2.416 4.2 5.857 4.2zm9.8-14.137c.91 0 1.613-.215 2.11-.646.495-.43.744-.977.744-1.64 0-.678-.24-1.23-.72-1.651C90.082.21 89.371 0 88.428 0c-.943 0-1.655.211-2.135.634-.48.422-.72.973-.72 1.652 0 .662.249 1.209.745 1.64.497.43 1.2.645 2.11.645zm2.556 13.864V5.366H85.87v13.069h5.113zm7.74.273c1.737 0 2.977-.63 3.722-1.888v1.615h5.112V.472h-5.112v6.534c-.745-1.275-1.985-1.913-3.723-1.913-1.753 0-3.214.642-4.38 1.926-1.166 1.283-1.75 2.91-1.75 4.882 0 1.97.584 3.598 1.75 4.882 1.166 1.283 2.627 1.925 4.38 1.925zm1.39-3.9c-.729 0-1.312-.274-1.75-.82-.439-.547-.658-1.243-.658-2.087 0-.845.215-1.54.645-2.087.447-.547 1.034-.82 1.762-.82s1.311.273 1.75.82c.438.546.657 1.242.657 2.087 0 .844-.219 1.54-.657 2.087-.439.546-1.022.82-1.75.82zm16.698 3.9c2.597 0 4.624-.754 6.08-2.26l-2.11-2.833c-1.042.845-2.217 1.267-3.524 1.267-.992 0-1.799-.224-2.42-.67-.62-.448-.93-.879-.93-1.293h9.604c.083-.298.124-.687.124-1.167 0-2.054-.674-3.677-2.022-4.87-1.349-1.193-3.073-1.789-5.175-1.789-2.25 0-4.028.671-5.335 2.013-1.307 1.341-1.961 2.956-1.961 4.844 0 1.938.69 3.549 2.072 4.833 1.382 1.283 3.247 1.925 5.597 1.925zm2.208-8.149h-5.112c.033-.613.298-1.08.794-1.404.496-.323 1.084-.484 1.762-.484.678 0 1.266.165 1.762.497.497.331.761.795.794 1.391z"/></svg>
+      </div>
+
+      <ul class="w-full font-[Barlow] text-dark-moderate-cyan text-xl flex flex-row justify-center items-center gap-14">
+        <li><a href="#about" aria-label="About us">About</a></li>
+        <li><a href="#services" aria-label="Services">Services</a></li>
+        <li><a href="#projects" aria-label="Projects">Projects</a></li>
+      </ul>
+
+      <ul class="text-ftr-txt-clr text-2xl flex flex-row justify-center items-center gap-8">
+        <li><a target="_blank" aria-label="Twitter profile" href="https://twitter.com/vaibhavO5/"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a target="_blank" aria-label="Telegram profile" href="https://telegram.me/vaibhavO5"><i class="fa-brands fa-telegram"></i></a></li>
+        <li><a target="_blank" aria-label="Proton mail id" href="mailto:vaibhavpancholi05@proton.me"><i class="fa-solid fa-envelope"></i></a></li>
+        <li><a target="_blank" aria-label="Link to GitHub repo of this site" href="https://github.com/vaibhav202/sunnyside"><i class="fa-brands fa-github"></i></a></li>
+      </ul>
+    </footer>
+  </main>
+
+  <script src="./main.js"></script>
+
+</body>
+</html>
